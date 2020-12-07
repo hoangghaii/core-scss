@@ -1,0 +1,86 @@
+//* =================== MEDIA QUERY MANAGE =================== *//
+
+@mixin respond($breakpoint) {
+	/** --- First Rules --- */
+
+	/*
+    * 0 - 576px: Extra small devices (portrait phones)
+    * 576px - 768px: Small devices (landscape phones)
+    * 768px - 992px: Medium devices (tablets)
+    * 992px - 1200px: Large devices (desktops)
+    * 1200px - 1800px: Where our normal style apply (big desktops)
+    * 1800px: Extra large devices (large desktops)
+    */
+
+	@if $breakpoint == port-phone {
+		@media only screen and (max-width: 575.98px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == land-phone {
+		@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tablet {
+		@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == desktop {
+		@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == large-desktop {
+		@media only screen and (min-width: 1800px) {
+		}
+	}
+
+	/** --- Another Rules --- */
+
+	/*
+    * 0 - 600px: Phone
+    * 600px - 900px: Table portait
+    * 900px - 1200px: Table landscape 
+    * [1200px- 1800px] where our normal style apply
+    * 1800px + : Big desktop 
+    */
+
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 37.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		@media only screen and (max-width: 56.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		}
+	}
+}
+
+@mixin two-device {
+	@media only screen and (max-width: 37.5em) {
+		@content;
+	}
+	@media only screen and (max-width: 56.25em) {
+		@content;
+	}
+}
