@@ -22,8 +22,20 @@
 		}
 	}
 
+	@if $breakpoint == only-tablet {
+		@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+			@content;
+		}
+	}
+
 	@if $breakpoint == tablet {
 		@media only screen and (max-width: 991.98px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == only-desktop {
+		@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
 			@content;
 		}
 	}
@@ -36,6 +48,7 @@
 
 	@if $breakpoint == large-desktop {
 		@media only screen and (min-width: 1400px) {
+			@content;
 		}
 	}
 }
@@ -56,3 +69,17 @@
 		content: "";
 	}
 }
+
+@mixin bg-darken($bgImg) {
+	background-size: cover;
+	background-image: linear-gradient(
+			rgba($color-black, 0.5),
+			rgba($color-black, 0.5)
+		),
+		url($bgImg);
+	position: relative;
+}
+
+// @include bg-darken(
+//	 "https://download.unsplash.com/photo-1428604467652-115d9d71a7f1"
+// );

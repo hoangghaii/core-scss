@@ -1,3 +1,5 @@
+/* ================ Grid core ================ */
+
 $gutter: 5rem;
 
 .row {
@@ -7,7 +9,7 @@ $gutter: 5rem;
 	&:not(:last-child) {
 		margin-bottom: $gutter;
 
-		@include respond(tab-port) {
+		@include respond(land-phone) {
 			margin-bottom: $gutter;
 		}
 	}
