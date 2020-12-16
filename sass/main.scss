@@ -1,18 +1,32 @@
+/* =============== Reset HTML ================ */
 @import "base/reset";
 
+/* ============= Functionalities ============= */
 @import "abstracts/functions";
+/* ================== Mixins ================= */
 @import "abstracts/mixins";
+/* ================ Variables ================ */
 @import "abstracts/variables";
 
-@import "base/animation";
+/* ================ Grid core ================ */
+@import "layout/grid";
+
+/* =================== Base ================== */
 @import "base/base";
+/* ================ Animations =============== */
+@import "base/animation";
+/* ================ Typography =============== */
 @import "base/typography";
 
+/* ================= Buttons ================= */
 @import "components/button";
 
+/* ================== Footer ================= */
 @import "layout/footer";
-@import "layout/grid";
+/* ================== Header ================= */
 @import "layout/header";
+/* ================ Navigation =============== */
 @import "layout/navigation";
 
+/* =================== Home ================== */
 @import "pages/home";

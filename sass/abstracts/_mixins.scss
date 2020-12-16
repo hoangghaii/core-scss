@@ -1,13 +1,13 @@
-//* =================== MEDIA QUERY MANAGE =================== *//
+// =================== MEDIA QUERY MANAGE =================== //
 
-/*
-* 0 - 576px: Extra small devices (port-phone)
-* 576px - 768px: Small devices (land-phone)
-* 768px - 992px: Medium devices (tablet)
-* 992px - 1200px: Large devices (desktop)
-* 1200px - 1400px: Where our normal style apply (big desktop, laptop)
-* 1400px: Extra large devices (large-desktop)
-*/
+// ========================================================== //
+// 	 0 - 576px: Extra small devices (port-phone)
+// 	 576px - 768px: Small devices (land-phone)
+// 	 768px - 992px: Medium devices (tablet)
+// 	 992px - 1200px: Large devices (desktop)
+// 	 1200px - 1400px: Where our normal style apply (big desktop, laptop)
+// 	 1400px: Extra large devices (large-desktop)
+// ========================================================== //
 
 @mixin respond($breakpoint) {
 	@if $breakpoint == port-phone {
