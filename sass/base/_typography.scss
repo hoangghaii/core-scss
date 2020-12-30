@@ -22,10 +22,18 @@ body {
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 150%;
+	color: $color-font;
 	scroll-behavior: smooth;
 }
 
-.heading-primary {
+%heading {
+	font-family: $font-raleway;
+	color: $color-heading;
+}
+
+.heading-1 {
+	@extend %heading;
+
 	color: $color-white;
 	text-transform: uppercase;
 
@@ -33,6 +41,8 @@ body {
 	backface-visibility: hidden;
 
 	&--main {
+		@extend .heading-1;
+
 		display: block;
 		font-size: 6rem;
 		font-weight: 400;
@@ -47,6 +57,8 @@ body {
 	}
 
 	&--sub {
+		@extend .heading-1;
+
 		display: block;
 		font-size: 2rem;
 		font-weight: 700;
@@ -62,7 +74,9 @@ body {
 	}
 }
 
-.heading-secondary {
+.heading-2 {
+	@extend %heading;
+
 	display: inline-block;
 
 	font-size: 3.5rem;
@@ -96,7 +110,9 @@ body {
 	}
 }
 
-.heading-tertiary {
+.heading-3 {
+	@extend %heading;
+
 	font-size: 1.6rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -104,6 +120,7 @@ body {
 
 .paragraph {
 	font-size: 1.6rem;
+	font-weight: 400;
 
 	&:not(:last-child) {
 		margin-bottom: 3rem;
