@@ -27,8 +27,12 @@ body {
 }
 
 %heading {
+	display: inline-block;
+
 	font-family: $font-raleway;
 	color: $color-heading;
+
+	cursor: default;
 }
 
 .heading-1 {
