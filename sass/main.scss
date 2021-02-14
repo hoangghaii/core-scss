@@ -1,11 +1,12 @@
 @import "abstracts/variables";
 @import "abstracts/functions";
+@import "abstracts/respondsive";
 @import "abstracts/mixins";
 
 @import "base/reset";
 @import "base/base";
 @import "base/typography";
-@import "base/animation";
+@import "base/animations";
 
 @import "layout/grid";
 @import "layout/navigation";
