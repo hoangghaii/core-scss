@@ -11,7 +11,7 @@
 // 	 1536px: Extra large devices (large-desktop)
 // ==================================================================== //
 
-@mixin respond($breakpoint) {
+@mixin respon($breakpoint) {
 	@if $breakpoint == port-phone {
 		@media only screen and (max-width: 639.98px) {
 			@content;
