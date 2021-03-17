@@ -50,7 +50,7 @@ body {
 		// -webkit-animation: moveInLeft 1s linear;
 		// animation: moveInLeft 1s linear;
 
-		@include respond(land-phone) {
+		@include respon(land-phone) {
 			letter-spacing: 1rem;
 			font-size: 5rem;
 		}
@@ -68,7 +68,7 @@ body {
 
 		margin-bottom: 6rem;
 
-		@include respond(land-phone) {
+		@include respon(land-phone) {
 			letter-spacing: 0.5rem;
 		}
 	}
@@ -95,11 +95,11 @@ body {
 
 	transition: all 0.25s;
 
-	@include respond(only-tablet) {
+	@include respon(only-tablet) {
 		font-size: 3rem;
 	}
 
-	@include respond(land-phone) {
+	@include respon(land-phone) {
 		font-size: 2.5rem;
 		padding: 0 1rem;
 	}

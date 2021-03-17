@@ -9,7 +9,7 @@ $gutter: 5rem;
 	&:not(:last-child) {
 		margin-bottom: $gutter;
 
-		@include respond(land-phone) {
+		@include respon(land-phone) {
 			margin-bottom: $gutter;
 		}
 	}
@@ -23,13 +23,13 @@ $gutter: 5rem;
 		&:not(:last-child) {
 			margin-right: $gutter;
 
-			@include respond(land-phone) {
+			@include respon(land-phone) {
 				margin-right: 0;
 				margin-bottom: $gutter;
 			}
 		}
 
-		@include respond(land-phone) {
+		@include respon(land-phone) {
 			width: 100% !important;
 			max-width: 100% !important;
 		}
