@@ -38,10 +38,17 @@ Palette 10
 // https://colordesigner.io/
 // https://webgradients.com/
 
+/* =================== Palette Primary Color ================== */
+$marrs-green: #008c8c;
+$carribean-green: #05ce91;
+$blue-ribbon: #005bff;
+$airbnb-color: #ff3152;
+$dodger-color: #1ea5fc;
+$violet-color: #8f00ff;
+
 /* =================== Palette Font ================== */
 
 // ---------------- Sans-Serif ---------------- //
-
 //  Montserrat  //
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 //  Open Sans  //
@@ -63,7 +70,6 @@ $workSans: "Work Sans", sans-serif;
 $libreFranklin: "Libre Franklin", sans-serif;
 
 // ------------------ Serif ------------------ //
-
 // Crimson Text //
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 // Neuton //
