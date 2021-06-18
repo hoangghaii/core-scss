@@ -23,7 +23,7 @@ html {
 		font-size: 50% !important; //1rem = 8px
 	}
 
-	@include respon(tablet) {
+	@include respon(only-tablet) {
 		font-size: 56.25% !important; //1rem = 9px
 	}
 
